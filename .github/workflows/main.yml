@@ -36,7 +36,7 @@ jobs:
       - name: 'run' 
         env:
           GH_ACC_T: ${{ secrets.GH_ACC_T }}
-          GH_R_N: ${{ github.GH_R_N }}"
+          GH_R_N: ${{ github.repository }}"
           VAR: ${{ github.VAR }}"
         run: python create_sonar_project.py
           
