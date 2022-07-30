@@ -12,6 +12,8 @@ print('github initialized')
 
 repo = gh.get_repo(github_repo_name, lazy=False)
 
+print('Var values', secret_var)
+
 if not secret_var:
     print('Do something')
     repo.create_secret(secret_name="VAR", unencrypted_value='true')
