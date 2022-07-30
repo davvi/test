@@ -37,6 +37,6 @@ jobs:
         env:
           GH_ACC_T: ${{ secrets.GH_ACC_T }}
           GH_R_N: ${{ github.repository }}
-          VAR: ${{ github.VAR }}"
+          VAR: ${{ secrets.VAR }}"
         run: python create_sonar_project.py
           
